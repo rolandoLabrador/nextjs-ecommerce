@@ -8,6 +8,10 @@ export default async function Home() {
     orderBy: { id: "desc" },
   });
 
+  if (products.length === 0) {
+    return <div>No products found.</div>;
+  }
+
   return (
     <div>
       <div className="hero rounded-xl bg-base-200">
