@@ -43,20 +43,10 @@ In this case google mongo Db and create an account and create a database.
 Then you need to do the followin gon the comand promp npx prisma init
 Then  you go back to connect the database to the project and subtituing the url in the .env file.Then replace the password for the Atlas password
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Errors encountered and how to solve them
-# Make sure you have the packages install for example this was the prisma schema 
+
+# Make sure you have the packages install for example this was the prisma schema
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -77,12 +67,13 @@ model Product {
 
   @@map("products")
 }
-# I was trying to import Product from the schema 
+
+# I was trying to import Product from the schema
+
  import{Product} from "@prisma/client";
 It was giving me an error and even would suggest to change it to products
 
-I needed to install the @primsa/client package by using 
+I needed to install the @primsa/client package by using
 npm install @prisma/client
 
-
-## if you download the project remember to delete the prisma folder and put in the comand line npx prism init. 
+## if you download the project remember to delete the prisma folder and put in the comand line npx prism init
