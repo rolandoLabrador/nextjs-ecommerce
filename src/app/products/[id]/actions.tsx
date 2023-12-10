@@ -10,13 +10,11 @@ export async function incrementProductQuantity(productId: string) {
   const articleIncart = cart.items.find((item) => item.productId === productId);
 
   if (articleIncart) {
-    await prisma.cartItem.update({where: {id: articleIncart.id},
-                                 data: {quantity:{increment: 1}}});
-                                
-                         
-                              
-  }
- else {
+    await prisma.cartItem.update({
+      where: { id: articleIncart.id },
+      data: { quantity: { increment: 1 } },
+    });
+  } else {
     await prisma.cartItem.create({
       data: {
         cartId: cart.id,
