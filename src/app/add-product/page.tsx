@@ -29,14 +29,14 @@ async function addProduct(formData: FormData) {
   });
 
   redirect("/");
-}
+
 
 export default async function AddProductPage() {
   const session = await getServerSession(authOptions);
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/add-product");
   }
- 
+
   return (
     <div>
       <h1 className="mb-3 text-lg font-bold">Add Product</h1>

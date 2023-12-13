@@ -12,7 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-npx prisma db push is to push the schema to the database. 
+npx prisma db push is to push the schema to the database.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -80,6 +80,4 @@ npm install @prisma/client
 
 ## if you download the project remember to delete the prisma folder and put in the comand line npx prism init
 
-
-
-# NPM RUN BUILD IS TO BUILD THE PROJECT.
+# NPM RUN BUILD IS TO BUILD THE PROJECT
