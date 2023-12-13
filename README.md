@@ -79,3 +79,7 @@ I needed to install the @primsa/client package by using
 npm install @prisma/client
 
 ## if you download the project remember to delete the prisma folder and put in the comand line npx prism init
+
+
+
+# NPM RUN BUILD IS TO BUILD THE PROJECT.
