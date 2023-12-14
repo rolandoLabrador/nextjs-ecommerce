@@ -1,8 +1,8 @@
 import FormSubmitButton from "@/components/FormSubmitButton";
 import { prisma } from "@/lib/db/prisma";
+import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 import { authOptions } from "../api/auth/[...nextauth]/route";
-import { getServerSession } from "next-auth";
 
 export const metadata = {
   title: "Add Product - Flowmazon",
@@ -10,7 +10,9 @@ export const metadata = {
 
 async function addProduct(formData: FormData) {
   "use server";
+
   const session = await getServerSession(authOptions);
+
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/add-product");
   }
@@ -29,10 +31,11 @@ async function addProduct(formData: FormData) {
   });
 
   redirect("/");
-
+}
 
 export default async function AddProductPage() {
   const session = await getServerSession(authOptions);
+
   if (!session) {
     redirect("/api/auth/signin?callbackUrl=/add-product");
   }

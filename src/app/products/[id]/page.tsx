@@ -43,8 +43,8 @@ interface ProductPageProps {
         <Image
           src={product.imageUrl}
           alt={product.name}
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className="rounded-lg"
           priority
         />
