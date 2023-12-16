@@ -88,6 +88,7 @@ export default async function Home({
         </div>
       </div>
       {/* end hero section */}
+       {/* Single product */}
       {currentPage === 1 && (
         <div className="hero rounded-xl bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
@@ -112,11 +113,11 @@ export default async function Home({
           </div>
         </div>
       )}
-
+      {/* end single product */}
       {/* value section start  */}
       <div className=" my-6 px-4 py-7">
         <div className="my-10 p-9">
-          <h2 className="text-5xl font-bold mb-6">vroom values</h2>
+          <h2 className="text-5xl font-bold mb-6">VEE-T values</h2>
           <p>
             We believe buying a car should be fun, easy, and affordable. Here’s
             how Vroom is leading the revolution
@@ -125,7 +126,7 @@ export default async function Home({
         <ValueComponents />
       </div>
       {/* value section end */}
-
+       
       <div className="my-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {(currentPage === 1 ? products.slice(1) : products).map((product) => (
           <ProductCard product={product} key={product.id} />
