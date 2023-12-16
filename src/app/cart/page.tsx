@@ -5,7 +5,7 @@ import { setProductQuantity } from "./actions";
 
 
 export const metadata = {
-  title: "Your Cart - Flowmazon",
+  title: "Your Cart - VEE-T",
 };
 
 export default async function CartPage() {

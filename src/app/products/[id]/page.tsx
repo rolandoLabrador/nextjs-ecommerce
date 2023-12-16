@@ -39,7 +39,7 @@ interface ProductPageProps {
     const product = await getProduct(id);
   
     return (
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center mt-20">
         <Image
           src={product.imageUrl}
           alt={product.name}
