@@ -84,4 +84,4 @@ npm install @prisma/client
 #
 
 # nextjs-ecommerce-QA
-,,,,
+,,,,  install 
