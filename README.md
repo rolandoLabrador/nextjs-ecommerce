@@ -83,4 +83,4 @@ npm install @prisma/client
 # NPM RUN BUILD IS TO BUILD THE PROJECT.
 #
 
-make sure to install the following packages
+
