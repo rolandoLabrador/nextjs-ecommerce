@@ -34,10 +34,10 @@ export default async function Navbar() {
                 <Link href={"/"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">SELL/TRADE</Link>
               </li>
               <li >
-                <Link href={"/about"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">FINANCE</Link>
+                <Link href={""} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">FINANCE</Link>
               </li>
               <li >
-                <Link href={"/about"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">ABOUT</Link>
+                <Link href={"/aboutUs"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">ABOUT</Link>
               </li>
               <li >
                 <Link href={"/"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">HELP</Link>
