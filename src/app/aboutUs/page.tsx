@@ -3,6 +3,8 @@ import Link from "next/link";
 import { prisma } from "@/lib/db/prisma";
 import ValueComponents from "@/components/ValueComponents";
 import { redirect } from "next/navigation";
+import EmployeeCard from "@/components/EmployeeCard";
+
 
 export default function AboutPage() {
   return (
@@ -19,7 +21,9 @@ export default function AboutPage() {
               best shopping experience for our customers. Our mission is to make
               buying cars online fun, easy, and affordable.
             </p>
+            <Link href="/">
             <button className="btn-primary btn">Get Started</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -36,9 +40,9 @@ export default function AboutPage() {
       {/* Team section */}
       <div className="my-6 px-4 py-7">
         <div className="my-10 p-9">
-          <h2 className="mb-6 text-5xl font-bold">Our Team</h2>
+          <h2 className="mb-6 text-5xl font-bold text-center">Our Team</h2>
           <p>Meet the talented individuals behind our success:</p>
-          {/* Add team member cards here */}
+          <EmployeeCard />
         </div>
       </div>
     </main>
