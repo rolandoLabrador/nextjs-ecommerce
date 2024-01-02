@@ -6,6 +6,10 @@ import { prisma } from "@/lib/db/prisma";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import AboutPage from "./aboutUs/page";
+
+
+
 
 interface HomeProps {
   searchParams: { page: string };
