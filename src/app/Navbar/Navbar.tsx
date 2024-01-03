@@ -28,7 +28,7 @@ export default async function Navbar() {
           <div className="hidden md:block">
             <ul className="flex items-center gap-5  ">
               <li >
-                <Link href={"/"}  className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">Buy</Link>
+                <Link href={"/"}  className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">BUY</Link>
               </li>
               <li >
                 <Link href={"/"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">SELL/TRADE</Link>
