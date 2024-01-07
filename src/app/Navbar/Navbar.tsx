@@ -19,7 +19,7 @@ export default async function Navbar() {
             {/* logo */}
             <div>
               <Link href="/" className=" text-4xl md:text-5xl font-bold">
-                VEE-T
+                VEETE 
               </Link>
             </div>
           </div>
