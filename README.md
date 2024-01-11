@@ -80,7 +80,40 @@ npm install @prisma/client
 
 ## if you download the project remember to delete the prisma folder and put in the comand line npx prism init
 
-# NPM RUN BUILD IS TO BUILD THE PROJECT.
-#
+# NPM RUN BUILD IS TO BUILD THE PROJECT
+
+#ui.shadcn.com
+When installing shadcn agter daisiyui make sure to add the following to the tailwind.config.js file because it will delete your plugins. 
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        lightTheme: {
+          primary: "#f4aa3a",
+          secondary: "#f4f4a1",
+          accent: "#1be885",
+          neutral: "#272136",
+          "base-100": "#ffffff",
+          info: "#778ad4",
+          success: "#23b893",
+          warning: "#f79926",
+          error: "#ea535a",
+          body: {
+            "background-color": "#e3e6e6",
+          },
+        },
+      },
+    ],
+  },
+};
 
 
+
+check out these libraries 

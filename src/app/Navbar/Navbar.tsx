@@ -19,7 +19,7 @@ export default async function Navbar() {
             {/* logo */}
             <div>
               <Link href="/" className=" text-4xl md:text-5xl font-bold">
-                VEE-T
+                VEETE 
               </Link>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default async function Navbar() {
                 <Link href={"/aboutUs"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">ABOUT</Link>
               </li>
               <li >
-                <Link href={"/"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">HELP</Link>
+                <Link href={"/help"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">HELP</Link>
               </li>
               
             </ul>

@@ -36,7 +36,7 @@ export default async function Home({
   const totalItemCount = await prisma.product.count();
 
   const totalPages = Math.ceil((totalItemCount - heroItemCount) / pageSize);
-
+  {/*This is the logic for the items  */}
   const products = await prisma.product.findMany({
     orderBy: { id: "desc" },
     skip:
