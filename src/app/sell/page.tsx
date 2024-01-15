@@ -25,7 +25,7 @@ return (
       
       <input
         type="text"
-        placeholder="Type here"
+        placeholder="Enter your VIN"
         className="input-bordered input w-full max-w-xs"
       />
 
