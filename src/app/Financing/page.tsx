@@ -22,11 +22,11 @@ export default async function Financing() {
   </div>
 </div>
 
-
+{/* divider*/}
 
 <div className="flex flex-col w-full">
 
-  <div className=" divider divider-error">      </div>
+  <div className=" divider divider-error"></div>
 </div>
 
 
