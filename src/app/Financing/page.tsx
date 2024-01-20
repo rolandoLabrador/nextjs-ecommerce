@@ -1,3 +1,6 @@
+"use client";
+import BasicRating from "@/components/basicRating";
+import { Carousel } from "@/components/ui/carousel";
 
 
 
@@ -8,7 +11,7 @@ export default async function Financing() {
     return (
         <>
         
-       
+        
          {/* This is the hero with an image */}
         <div className="mt-20 hero min-h-screen bg-base-200">
   <div className="hero-content flex-col lg:flex-row-reverse">
@@ -17,7 +20,7 @@ export default async function Financing() {
       <h1 className="text-5xl font-bold">FINANCING MADE EASY</h1>
       <p className="py-6">Get pre-qualified in 2 minutes and see real terms and actual monthly payments with no impact to your credit score.</p>
       <button className="btn btn-primary">GET YOUR TERMS</button>
-     
+      
     </div>
   </div>
 </div>
@@ -27,12 +30,13 @@ export default async function Financing() {
 <div className="flex flex-col w-full">
 
   <div className=" divider divider-error"></div>
+  
 </div>
 
+{/* carousel using shadcn*/}
 
 
-
-
+<Carousel/>
 
 
 
