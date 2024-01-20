@@ -1,5 +1,6 @@
 "use client";
 import BasicRating from "@/components/basicRating";
+import { CarouselDemo } from "@/components/carousel";
 import { Carousel } from "@/components/ui/carousel";
 
 
@@ -36,7 +37,7 @@ export default async function Financing() {
 {/* carousel using shadcn*/}
 
 
-<Carousel/>
+<CarouselDemo />
 
 
 
