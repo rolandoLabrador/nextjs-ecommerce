@@ -1,11 +1,13 @@
+"use client";
 
 
 
+import { useState } from "react";
 
-
-
-export default async function BuyProduct() {
-
+export default function BuyProduct() {
+const [hasVin,setHasVin] = useState("false");
+const [vinNumber,setVinNumber] = useState("");
+const [mileage,setMileage] = useState("");
 
 return (
 <div 
@@ -27,6 +29,8 @@ return (
         type="text"
         placeholder="Enter your VIN"
         className="input-bordered input w-full max-w-xs"
+        value={vinNumber}
+        onChange={(event) => setVinNumber(event.target.value)}
       />
 
       <button className="mt-5  btn-primary btn">Get Started</button>
