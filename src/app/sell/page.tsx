@@ -1,13 +1,13 @@
 "use client";
 
-
-
 import { useState } from "react";
 
 export default function BuyProduct() {
 const [hasVin,setHasVin] = useState("false");
 const [vinNumber,setVinNumber] = useState("");
 const [mileage,setMileage] = useState("");
+
+const toggleHasVin = () => setHasVin((prevState) => !prevState);
 
 return (
 <div 
@@ -24,7 +24,8 @@ return (
       <p className="mb-5">
         Get instant appraisal in as little as 30 seconds and we will pick up your car for free.
       </p>
-      
+      {!hasVin &&(
+        <>
       <input
         type="text"
         placeholder="Enter your VIN"
@@ -32,11 +33,48 @@ return (
         value={vinNumber}
         onChange={(event) => setVinNumber(event.target.value)}
       />
+    <button
+       className="mt-5 
+        btn-primary btn" 
+        onClick={toggleHasVin}>
+        Get Started
+        </button>
 
-      <button className="mt-5  btn-primary btn">Get Started</button>
+
+
+
+      </>
+      )}
+
+
+{hasVin &&(
+  <>
+      <input
+        type="text"
+        placeholder="Enter your Mileage"
+        className="input-bordered input w-full max-w-xs"
+        value={mileage}
+        onChange={(event) => setMileage(event.target.value)}
+      />
+      <div></div>
+    <button className="mt-5  btn-primary btn" onClick={toggleHasVin}>
+        Submit</button>
+      </>
+      )}
+
+
+
+
+
+   
+      
     </div>
   </div>
 </div>
 
 );
 }
+
+
+
+// time 18:00
