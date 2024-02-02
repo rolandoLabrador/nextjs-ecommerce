@@ -1,13 +1,38 @@
 "use client";
 
+
+import { Noto_Serif_Gujarati } from "next/font/google";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 export default function BuyProduct() {
-const [hasVin,setHasVin] = useState("false");
-const [vinNumber,setVinNumber] = useState("");
-const [mileage,setMileage] = useState("");
+  const [hasVin, setHasVin] = useState(false);
+  const [vinNumber, setVinNumber] = useState("");
+  const [mileage, setMileage] = useState("");
+  const [carData, setCarData] = useState<any>(null);
 
-const toggleHasVin = () => setHasVin((prevState) => !prevState);
+  const toggleHasVin = () => setHasVin((prevState) => !prevState);
+
+  function handleGetStarted(){
+   if(vinNumber.length < 8 || vinNumber.length > 19)
+   {toast.error("Invalid VIN number it needs to be at least 8 caracter long and can not exeed 19 characters");}
+    return;
+
+     toggleHasVin();
+
+  }
+
+  async function handleSubmit() {
+    const isNumber = !isNaN(Number(mileage));
+    if(!isNumber){
+      toast.error("Mileage must be a number");
+      return;
+    }
+    
+  }
+
+
+
 
 return (
 <div 
@@ -36,7 +61,7 @@ return (
     <button
        className="mt-5 
         btn-primary btn" 
-        onClick={toggleHasVin}>
+        onClick={handleGetStarted}>
         Get Started
         </button>
 
@@ -57,7 +82,7 @@ return (
         onChange={(event) => setMileage(event.target.value)}
       />
       <div></div>
-    <button className="mt-5  btn-primary btn" onClick={toggleHasVin}>
+    <button className="mt-5  btn-primary btn" onClick={handleSubmit}>
         Submit</button>
       </>
       )}
