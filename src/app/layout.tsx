@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "VEE-T",
-  description: "We make your wallet cry",
+  description: "Online car appraisal and selling platform",
 };
 
 export default function RootLayout({
