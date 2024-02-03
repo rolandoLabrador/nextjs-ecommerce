@@ -82,8 +82,8 @@ npm install @prisma/client
 
 # NPM RUN BUILD IS TO BUILD THE PROJECT
 
-#ui.shadcn.com
-When installing shadcn agter daisiyui make sure to add the following to the tailwind.config.js file because it will delete your plugins. 
+# ui.shadcn.com
+When installing shadcn agter daisiyui make sure to add the following to the tailwind.config.js file because it will delete your plugins.
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -113,10 +113,3 @@ module.exports = {
     ],
   },
 };
-
-
-
-check out these libraries 
-
-
-QA
