@@ -83,6 +83,7 @@ npm install @prisma/client
 # NPM RUN BUILD IS TO BUILD THE PROJECT
 
 # ui.shadcn.com
+
 When installing shadcn agter daisiyui make sure to add the following to the tailwind.config.js file because it will delete your plugins.
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -114,8 +115,7 @@ module.exports = {
   },
 };
 
-
-API IM USING https://rapidapi.com/dominonet-lTpEE6zONeS/api/vehicle-market-value/
-
+API IM USING <https://rapidapi.com/dominonet-lTpEE6zONeS/api/vehicle-market-value/>
 
 # I had to install the following packages
+reinstall 
