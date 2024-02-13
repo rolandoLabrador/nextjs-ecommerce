@@ -110,7 +110,7 @@ export default function BuyProduct() {
 
                 <div className="card-actions justify-center">
                   <button
-                    className="btn-primary btn"
+                    className="bg-white text-black btn"
                     onClick={() => {
                       toggleHasVin();
                       setCarData(null);
