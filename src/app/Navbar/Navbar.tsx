@@ -27,7 +27,7 @@ export default async function Navbar() {
           {/* Navmenu */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-5  ">
-              <li >
+              <li id="nav-bar buy">
                 <Link href={"/buy"}  className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">BUY</Link>
               </li>
               <li >
