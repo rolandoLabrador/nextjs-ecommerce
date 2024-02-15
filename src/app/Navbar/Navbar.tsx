@@ -62,7 +62,7 @@ export default async function Navbar() {
                 <li>
                   <Link href={"/"}>Buy</Link>
                 </li>
-                <li>
+                <li id=" sell-trade">
                   <Link href={"/"}>SELL/TRADE</Link>
                 </li>
                 <li>
