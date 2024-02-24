@@ -1,4 +1,4 @@
-// cypress/support/commands.js
+// cypress/support/commands.ts
 Cypress.Commands.add('loginByGoogleApi', () => {
     cy.log('Logging in to Google')
     cy.request({
