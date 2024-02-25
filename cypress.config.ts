@@ -1,6 +1,6 @@
 import { defineConfig } from 'cypress'
  
-require('dotenv').config()
+
 
 export default defineConfig({
   env: {
@@ -13,3 +13,5 @@ export default defineConfig({
     setupNodeEvents(on, config) {},
   },
 })
+
+//require('dotenv').config()

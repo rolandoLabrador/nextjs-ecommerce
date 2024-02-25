@@ -4,11 +4,11 @@
 describe('template spec', () => {
   it('passes', () => {
     cy.visit('http://localhost:3000')
-    cy.get('nav').contains('BUY').click();
-    cy.get('nav').contains('SELL').click();
-    cy.get('nav').contains('FINANCE').click();
-    cy.get('nav').contains('ABOUT').click();
-    cy.get('nav').contains('HELP').click();
+    cy.clickNavBuy('BUY'); // Using the custom command to click on an element containing 'BUY'
+    cy.clickNavBuy('SELL');
+    cy.clickNavBuy('FINANCE');
+    cy.clickNavBuy('ABOUT');
+    cy.clickNavBuy('HELP');
     cy.get('.indicator').click();
     cy.get('.card-actions').click();
     
