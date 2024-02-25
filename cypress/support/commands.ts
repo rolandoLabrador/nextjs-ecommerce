@@ -1,4 +1,4 @@
-// cypress/support/commands.ts
+//cypress/support/commands.ts
 Cypress.Commands.add('loginByGoogleApi', () => {
     cy.log('Logging in to Google')
     cy.request({
@@ -35,3 +35,26 @@ Cypress.Commands.add('loginByGoogleApi', () => {
       })
     })
   })
+
+
+
+// Add the custom command to the Cypress.Commands namespace
+Cypress.Commands.add('clickNavBuy', () => {
+  cy.get('nav').contains('BUY').click();
+});
+
+// cypress/support/index.d.ts
+
+// Extend the Cypress Chainable interface with the new command
+declare namespace Cypress {
+  interface Chainable<Subject = any> {
+    /**
+     * Custom command to click on the 'BUY' link in the navigation.
+     * @example cy.clickNavBuy()
+     */
+    clickNavBuy(): Chainable<Subject>;
+  }
+}
+
+// Import the commands file to ensure it is executed
+import './commands';
