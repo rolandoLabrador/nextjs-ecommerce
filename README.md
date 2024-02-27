@@ -117,5 +117,11 @@ module.exports = {
 
 API IM USING <https://rapidapi.com/dominonet-lTpEE6zONeS/api/vehicle-market-value/>
 
-This is for the cypress login 
-https://docs.cypress.io/guides/end-to-end-testing/google-authentication
+This is for the cypress login
+<https://docs.cypress.io/guides/end-to-end-testing/google-authentication>
+
+# Cypress
+
+To make a custom comand you first need to add the type definition for the custom command.
+After that you can add the custom command in the commands.ts file.
+Then you can use the custom command in the test file.
