@@ -123,4 +123,21 @@ This is for the cypress login
 # Cypress
 
 check 
-check 
+check // cypress/integration/e2e.spec.ts
+
+describe('End-to-End Test', () => {
+  it('should perform an end-to-end test', () => {
+    cy.visit('/'); // Visit the homepage
+
+    // Perform actions like clicking on elements, filling forms, etc.
+    cy.get('nav').contains('Buy Now').click();
+
+    // Add assertions to validate the expected behavior
+    cy.url().should('include', '/buy'); // Validate the URL after clicking 'Buy Now'
+
+    // Custom command to login using Google API
+    cy.loginByGoogleApi();
+
+    // Add more test steps as needed
+  });
+});
