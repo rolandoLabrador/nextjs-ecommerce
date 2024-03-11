@@ -141,3 +141,17 @@ describe('End-to-End Test', () => {
     // Add more test steps as needed
   });
 });
+
+
+SELECT
+    u.user_id,
+    u.username,
+    COUNT(o.order_id) AS total_orders
+FROM
+    users u
+LEFT JOIN
+    orders o ON u.user_id = o.user_id
+GROUP BY
+    u.user_id, u.username
+ORDER BY
+    total_orders DESC;
