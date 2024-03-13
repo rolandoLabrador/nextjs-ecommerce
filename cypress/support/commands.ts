@@ -4,6 +4,7 @@ declare global {
     interface Chainable<Subject> {
       loginByGoogleApi: () => void;
       clickNavBuy: (text: string) => void;
+     
       
     }
   }

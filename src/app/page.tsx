@@ -59,11 +59,11 @@ export default async function Home({
             </Link>
           </p>
           {/* search div start  */}
-          <div>
-            <form action={searchProducts}>
-              <div className="flex w-full ">
+          <div >
+            <form action={searchProducts} data-cy="searchMainpage2">
+              <div className="flex w-full "data-cy="searchMainpage">
                 <input
-                  data-cy="searchMainpage"
+                  data-cy="searchMainpage1"
                   name="searchQuery"
                   type="search"
                   placeholder="Search you can add anything"
