@@ -14,6 +14,10 @@ Cypress.Commands.add('clickNavBuy', (text: string) => {
   cy.get('nav').contains(text).click();
 });
 
+
+
+
+
 Cypress.Commands.add("loginByGoogleApi", () => {
   cy.log("Logging in to Google");
   cy.request({

@@ -63,6 +63,7 @@ export default async function Home({
             <form action={searchProducts}>
               <div className="flex w-full ">
                 <input
+                  data-cy="searchMainpage"
                   name="searchQuery"
                   type="search"
                   placeholder="Search you can add anything"
