@@ -4,6 +4,7 @@ declare global {
     interface Chainable<Subject> {
       loginByGoogleApi: () => void;
       clickNavBuy: (text: string) => void;
+     
       
     }
   }
@@ -13,6 +14,10 @@ declare global {
 Cypress.Commands.add('clickNavBuy', (text: string) => {
   cy.get('nav').contains(text).click();
 });
+
+
+
+
 
 Cypress.Commands.add("loginByGoogleApi", () => {
   cy.log("Logging in to Google");
