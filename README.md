@@ -141,17 +141,12 @@ describe('End-to-End Test', () => {
     // Add more test steps as needed
   });
 });
+## Cypress 
 
+Page Load Timing: When you visit a page with cy.visit(), Cypress waits for the page to load completely before proceeding with the next command. If the search input field is rendered dynamically or asynchronously after the initial page load, it might not be present in the DOM when Cypress first tries to find it.
 
-SELECT
-    u.user_id,
-    u.username,
-    COUNT(o.order_id) AS total_orders
-FROM
-    users u
-LEFT JOIN
-    orders o ON u.user_id = o.user_id
-GROUP BY
-    u.user_id, u.username
-ORDER BY
-    total_orders DESC;
+Isolation of Test Cases: Each test case in Cypress runs independently, and Cypress starts each test case with a clean slate, including a fresh page load. This means that the state of the page (e.g., DOM elements, JavaScript variables) is reset between test cases. Therefore, if the search input field is initialized after the initial page load, it won't exist when Cypress begins the second test case unless you trigger its rendering again.
+
+Cypress automatically fails a test if it detects an uncaught error originating from the application code being tested. This behavior is to ensure that tests fail explicitly when there are unexpected errors in the application, helping to catch issues and ensure test reliability.
+
+However, there are cases where applications intentionally throw errors or handle them in a way that doesn't indicate a failure. In such cases, Cypress might erroneously interpret these errors as test failures, even though they are not indicative of a problem with the application under test.

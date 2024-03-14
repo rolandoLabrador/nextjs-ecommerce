@@ -59,9 +59,9 @@ export default async function Home({
             </Link>
           </p>
           {/* search div start  */}
-          <div >
-            <form action={searchProducts} data-cy="searchMainpage2">
-              <div className="flex w-full "data-cy="searchMainpage">
+          <div>
+            <form action={searchProducts} >
+              <div className="flex w-full ">
                 <input
                   data-cy="searchMainpage1"
                   name="searchQuery"
@@ -70,6 +70,7 @@ export default async function Home({
                   className="outline-none border-2 border-gray-300 p-3 border-r-0 w-[60%] rounded-l-lg "
                 />
                 <button
+                  data-cy="searchMainpagebutton"
                   type="submit"
                   className="p-3 border-2 w-[20%] border-red-500 outline-none bg-red-500 text-white rounded-r-lg"
                 >
