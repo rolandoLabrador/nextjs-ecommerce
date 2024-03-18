@@ -10,13 +10,9 @@ describe("place order without login", () => {
     cy.get("[data-cy=searchMainpage1]").type("cat snack");
     cy.get("[data-cy=searchMainpagebutton]").click();
     cy.get('a[href="/products/656e122ad30b0d714710a411"]').click();
-    //cy.pause();
-   // cy.wait(5000);
-    cy.get(".btn-primary.btn").click({ multiple: true, force: true }); // Multiple : true tells cypress to click on all matched elemetns one by one. force: true tells cypress to click on the element even if it is not visible
-    //cy.pause();
-     cy.wait(2000);
-    // cy.get('.indicator').click();
-
-    //cy.pause();
+    cy.get(".flex > .btn-primary").click();
+    cy.get(".indicator").click();
+    cy.get(".card-actions > .btn-primary").click();
+    cy.get(".flex-col > .btn-primary").click();
   });
 });
