@@ -5,7 +5,8 @@ import React, { useState } from "react";
 export default function Page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-//  async function handleSubmit() {
+ async function handleSubmit() {
+  console.log("data",{email,password});
   return (
     // this is the form
     <div className="mt-10 justify-center ">
@@ -101,4 +102,6 @@ export default function Page() {
     </div>
   );
 }
-//}
+};
+
+// MIN 45
