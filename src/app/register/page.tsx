@@ -1,6 +1,23 @@
 "use client";
+
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import React, { useState } from "react";
+import FormSubmitButton from "@/components/FormSubmitButton";
+import { prisma } from "@/lib/db/prisma";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
+import { authOptions } from "../api/auth/[...nextauth]/route";
+import { Iuser } from "@/types/TUser";
+
+async function addUser(payload: Iuser) {
+  "use server"
+  const response = await prisma.user.create({
+    data: { ...payload },
+  });
+  console.log("response", response);
+  redirect("/");
+}
 
 export default function Page() {
   const [email, setEmail] = useState("");
@@ -83,7 +100,6 @@ export default function Page() {
             <div>
               <button
                 onClick={handleSubmit}
-                
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Sign in
@@ -92,12 +108,12 @@ export default function Page() {
           </div>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Not a member?
+            <a> Not a member? </a>
             <a
               href="#"
               className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
             >
-              Start a 14 day free trial
+              Register now
             </a>
           </p>
         </div>
@@ -107,4 +123,4 @@ export default function Page() {
   //}
 }
 
-// MIN 54:33
+// MIn 01:11
