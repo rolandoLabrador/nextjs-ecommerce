@@ -1,8 +1,4 @@
-
-
-
-
-export type Iuser = {
-    email:string;
-    password:string;
-}
+export type IUser = {
+  email: string;
+  password: string;
+};

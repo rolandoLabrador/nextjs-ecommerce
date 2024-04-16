@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "VEE-T",
-  description: "Online car appraisal and selling platform",
+  description: "We make your wallet cry",
 };
 
 export default function RootLayout({
@@ -22,9 +22,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <SessionProvider>
           <ToastLayout>
-           <Navbar />
-          <main className="m-auto min-w-[300px] max-w-7xl p-4 ">{children}</main>
-          <Footer />
+            <Navbar />
+            <main className="m-auto min-w-[300px] max-w-7xl p-4 ">
+              {children}
+            </main>
+            <Footer />
           </ToastLayout>
         </SessionProvider>
       </body>

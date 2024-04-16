@@ -18,8 +18,8 @@ export default async function Navbar() {
           <div>
             {/* logo */}
             <div>
-              <Link href="/" className=" text-4xl md:text-5xl font-bold">
-                VEETE 
+              <Link href="/" className=" text-4xl font-bold md:text-5xl">
+                VEETE
               </Link>
             </div>
           </div>
@@ -27,22 +27,46 @@ export default async function Navbar() {
           {/* Navmenu */}
           <div className="hidden md:block">
             <ul className="flex items-center gap-5  ">
-              <li id="nav-bar buy">
-                <Link href={"/buy"}  className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">BUY</Link>
+              <li>
+                <Link
+                  href={"/buy"}
+                  className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+                >
+                  BUY
+                </Link>
               </li>
-              <li >
-                <Link href={"/sell"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">SELL</Link>
+              <li>
+                <Link
+                  href={"/sell"}
+                  className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+                >
+                  SELL
+                </Link>
               </li>
-              <li >
-                <Link href={"/Financing"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">FINANCE</Link>
+              <li>
+                <Link
+                  href={"#"}
+                  className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+                >
+                  FINANCE
+                </Link>
               </li>
-              <li >
-                <Link href={"/aboutUs"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">ABOUT</Link>
+              <li>
+                <Link
+                  href={"/aboutUs"}
+                  className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+                >
+                  ABOUT
+                </Link>
               </li>
-              <li >
-                <Link href={"/help"} className="transition duration-100  hover:border-b-2 hover:border-red-500 pb-1">HELP</Link>
+              <li>
+                <Link
+                  href={"/help"}
+                  className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+                >
+                  HELP
+                </Link>
               </li>
-              
             </ul>
           </div>
 
@@ -62,7 +86,7 @@ export default async function Navbar() {
                 <li>
                   <Link href={"/"}>Buy</Link>
                 </li>
-                <li id=" sell-trade">
+                <li>
                   <Link href={"/"}>SELL/TRADE</Link>
                 </li>
                 <li>

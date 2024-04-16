@@ -4,7 +4,7 @@ export async function getMarketValue(vin: string, mileage: number) {
     {
       method: "GET",
       headers: {
-        "content-type": "application/json",
+        "Content-Type": "application/json",
         Accept: "application/json",
         "X-RapidAPI-Key": "e1eb64bc2fmsh6e5597cb7964124p112e8ejsn27f21cf000e8",
         "X-RapidAPI-Host": "car-utils.p.rapidapi.com",

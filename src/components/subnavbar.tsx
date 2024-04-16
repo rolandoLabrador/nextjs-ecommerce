@@ -18,7 +18,7 @@ const Subnavbar = (props: TProps) => {
     <>
       <div className="navbar mt-20 bg-base-100">
         <div className="flex-1">
-          <a className="btn-ghost btn text-xl"></a>
+          <a className="btn-ghost btn text-xl">daisyUI</a>
         </div>
 
         <div className="flex-none gap-2">
