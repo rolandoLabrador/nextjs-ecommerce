@@ -78,7 +78,7 @@ It was giving me an error and even would suggest to change it to products
 I needed to install the @primsa/client package by using
 npm install @prisma/client
 
-## if you download the project remember to delete the prisma folder and put in the comand line npx prism init
+## if you download the project remember to delete the prisma folder and put in the comand line npx prisma init
 
 # NPM RUN BUILD IS TO BUILD THE PROJECT
 
@@ -122,7 +122,7 @@ This is for the cypress login
 
 # Cypress
 
-check 
+check
 check // cypress/integration/e2e.spec.ts
 
 describe('End-to-End Test', () => {
@@ -141,7 +141,8 @@ describe('End-to-End Test', () => {
     // Add more test steps as needed
   });
 });
-## Cypress 
+
+## Cypress
 
 Page Load Timing: When you visit a page with cy.visit(), Cypress waits for the page to load completely before proceeding with the next command. If the search input field is rendered dynamically or asynchronously after the initial page load, it might not be present in the DOM when Cypress first tries to find it.
 
@@ -150,3 +151,6 @@ Isolation of Test Cases: Each test case in Cypress runs independently, and Cypre
 Cypress automatically fails a test if it detects an uncaught error originating from the application code being tested. This behavior is to ensure that tests fail explicitly when there are unexpected errors in the application, helping to catch issues and ensure test reliability.
 
 However, there are cases where applications intentionally throw errors or handle them in a way that doesn't indicate a failure. In such cases, Cypress might erroneously interpret these errors as test failures, even though they are not indicative of a problem with the application under test.
+
+check this.
+check // cypress/integration/e2e.spec.ts

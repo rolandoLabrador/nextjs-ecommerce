@@ -103,14 +103,14 @@ export default function BuyProduct() {
           <br></br>
 
           {carData && (
-            <div className="card mt-5 bg-primary text-primary-content text-center">
-              <div className="card-body text-center">
+            <div className="card mt-5 bg-primary text-primary-content">
+              <div className="card-body">
                 <h2 className="card-title">{carData?.vehicle}</h2>
                 <p>${carData?.prices?.below}</p>
 
-                <div className="card-actions justify-center">
+                <div className="card-actions justify-end">
                   <button
-                    className="bg-white text-black btn"
+                    className="btn-primary btn"
                     onClick={() => {
                       toggleHasVin();
                       setCarData(null);
@@ -129,5 +129,3 @@ export default function BuyProduct() {
     </div>
   );
 }
-
-// time 54:00

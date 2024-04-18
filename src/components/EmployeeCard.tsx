@@ -5,7 +5,7 @@ import data from "@/Ourteam";
 const EmployeeCard = () => {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-     { data.map((item) => (
+      {data.map((item) => (
         <div key={item.id} className="rounded-md bg-white p-9">
           <div className="mb-4 flex items-center justify-center">
             <img

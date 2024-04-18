@@ -60,17 +60,15 @@ export default async function Home({
           </p>
           {/* search div start  */}
           <div>
-            <form action={searchProducts} >
+            <form action={searchProducts}>
               <div className="flex w-full ">
                 <input
-                  data-cy="searchMainpage1"
                   name="searchQuery"
                   type="search"
                   placeholder="Search you can add anything"
                   className="outline-none border-2 border-gray-300 p-3 border-r-0 w-[60%] rounded-l-lg "
                 />
                 <button
-                  data-cy="searchMainpagebutton"
                   type="submit"
                   className="p-3 border-2 w-[20%] border-red-500 outline-none bg-red-500 text-white rounded-r-lg"
                 >
