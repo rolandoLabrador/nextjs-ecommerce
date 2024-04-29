@@ -155,4 +155,4 @@ However, there are cases where applications intentionally throw errors or handle
 check this.
 check // cypress/integration/e2e.spec.ts
 check // cypress/support/commands.ts
-commit
+commit // cypress: add custom command to login using Google API
