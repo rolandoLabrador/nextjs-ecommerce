@@ -152,7 +152,4 @@ Cypress automatically fails a test if it detects an uncaught error originating f
 
 However, there are cases where applications intentionally throw errors or handle them in a way that doesn't indicate a failure. In such cases, Cypress might erroneously interpret these errors as test failures, even though they are not indicative of a problem with the application under test.
 
-check this.
-check // cypress/integration/e2e.spec.ts
-check // cypress/support/commands.ts
-commit // cypress: add custom command to login using Google API
+comment
