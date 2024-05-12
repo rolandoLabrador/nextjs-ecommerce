@@ -84,19 +84,19 @@ export default async function Navbar() {
                 className="dropdown-content menu rounded-box z-[1] mt-5 w-52 bg-base-100 p-2 shadow"
               >
                 <li>
-                  <Link href={"/"}>Buy</Link>
+                  <Link href={"/buy"}>Buy</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>SELL/TRADE</Link>
+                  <Link href={"/sell"}>SELL/TRADE</Link>
                 </li>
                 <li>
                   <Link href={"/"}>FINANCE</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>ABOUT</Link>
+                  <Link href={"/aboutUs"}>ABOUT</Link>
                 </li>
                 <li>
-                  <Link href={"/"}>HELP</Link>
+                  <Link href={"/help"}>HELP</Link>
                 </li>
               </ul>
             </div>
