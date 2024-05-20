@@ -152,4 +152,5 @@ Cypress automatically fails a test if it detects an uncaught error originating f
 
 However, there are cases where applications intentionally throw errors or handle them in a way that doesn't indicate a failure. In such cases, Cypress might erroneously interpret these errors as test failures, even though they are not indicative of a problem with the application under test.
 
-comment this
+coment 
+aboce 
