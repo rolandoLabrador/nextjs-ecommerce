@@ -150,7 +150,3 @@ Isolation of Test Cases: Each test case in Cypress runs independently, and Cypre
 
 Cypress automatically fails a test if it detects an uncaught error originating from the application code being tested. This behavior is to ensure that tests fail explicitly when there are unexpected errors in the application, helping to catch issues and ensure test reliability.
 
-However, there are cases where applications intentionally throw errors or handle them in a way that doesn't indicate a failure. In such cases, Cypress might erroneously interpret these errors as test failures, even though they are not indicative of a problem with the application under test.
-
-coment 
-aboce 
