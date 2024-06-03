@@ -37,7 +37,9 @@ export default async function Navbar() {
               </li>
               <li>
                 <Link
+                   
                   href={"/sell"}
+                  data-cy="sell"
                   className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
                 >
                   SELL
@@ -47,6 +49,7 @@ export default async function Navbar() {
                 <Link
                   href={"#"}
                   className="pb-1 transition  duration-100 hover:border-b-2 hover:border-red-500"
+            
                 >
                   FINANCE
                 </Link>

@@ -66,6 +66,7 @@ export default function BuyProduct() {
           {!hasVin && !carData && (
             <>
               <input
+                cy-data="vin-input"
                 type="text"
                 placeholder="Enter your VIN"
                 className="input-bordered input w-full max-w-xs"
