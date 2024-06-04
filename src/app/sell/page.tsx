@@ -66,7 +66,7 @@ export default function BuyProduct() {
           {!hasVin && !carData && (
             <>
               <input
-                cy-data="vin-input"
+               
                 type="text"
                 placeholder="Enter your VIN"
                 className="input-bordered input w-full max-w-xs"
@@ -75,6 +75,7 @@ export default function BuyProduct() {
               />
 
               <button
+                data-cy="sell_button"
                 className="btn-primary btn mt-5"
                 onClick={handleGetStarted}
               >
