@@ -87,6 +87,7 @@ export default function BuyProduct() {
           {hasVin && !carData && (
             <>
               <input
+                data-cy="mileage"
                 type="text"
                 placeholder="Enter your Mileage"
                 className="input-bordered input w-full max-w-xs"
@@ -96,7 +97,9 @@ export default function BuyProduct() {
 
               <br></br>
 
-              <button className="btn-primary btn mt-5" onClick={handleSubmit}>
+              <button 
+              data-cy="sell_submit_button"
+              className="btn-primary btn mt-5" onClick={handleSubmit}>
                 Submit
               </button>
             </>
@@ -112,6 +115,7 @@ export default function BuyProduct() {
 
                 <div className="card-actions justify-end">
                   <button
+                    data-cy="retry_button"
                     className="btn-primary btn"
                     onClick={() => {
                       toggleHasVin();

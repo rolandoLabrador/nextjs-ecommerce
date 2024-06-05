@@ -8,6 +8,10 @@ describe("offer", () => {
             cy.get("[data-cy=sell]").click();
             cy.get('.input-bordered').type(vin);
             cy.get("[data-cy=sell_button]").click();
+            cy.get("[data-cy=mileage]").type("10000");
+            cy.get("[data-cy=sell_submit_button]").click();
+            cy.get("[data-cy=retry_button]").click();
+
         });
     });
 });
