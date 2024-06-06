@@ -15,3 +15,4 @@ describe("offer", () => {
         });
     });
 });
+// Path: cypress/e2e/placeOrderWithoutLogin.cy.ts
