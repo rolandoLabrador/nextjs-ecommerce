@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["es5", "dom"],
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+      "../node_modules/cypress",
+      "../cypress/**/*.ts",
+      "support/vin-generator.d.ts"
+    ]
+  }
+  //delete if vin generator is not working
