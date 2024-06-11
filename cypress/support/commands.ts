@@ -1,4 +1,5 @@
 //cypress/support/commands.ts
+import 'cypress';
 declare global {
   namespace Cypress {
     interface Chainable<Subject> {
@@ -14,7 +15,6 @@ declare global {
 Cypress.Commands.add('clickNavBuy', (text: string) => {
   cy.get('nav').contains(text).click();
 });
-
 
 
 
